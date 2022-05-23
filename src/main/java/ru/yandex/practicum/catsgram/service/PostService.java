@@ -27,7 +27,7 @@ public class PostService {
 
     private static Integer createNextId(){
         return globalIdPosts++;
-    }
+    } 
 
     public List<Post> findPostByEmail(String email, Integer size, String sort){
         return posts.stream().filter(post -> email.equals(post.getAuthor()))
